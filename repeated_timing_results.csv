@@ -1,0 +1,51 @@
+Query,Method,Run,Latency_ms
+AI for early disease detection,BM25,1,1.004899968393147
+AI for early disease detection,Semantic (MiniLM + FAISS vectors),1,0.07429998368024826
+AI for early disease detection,BM25,2,0.6916000274941325
+AI for early disease detection,Semantic (MiniLM + FAISS vectors),2,0.057699973694980145
+AI for early disease detection,BM25,3,0.665399944409728
+AI for early disease detection,Semantic (MiniLM + FAISS vectors),3,0.05519995465874672
+AI for early disease detection,BM25,4,0.6232000887393951
+AI for early disease detection,Semantic (MiniLM + FAISS vectors),4,0.05289993714541197
+AI for early disease detection,BM25,5,0.623999978415668
+AI for early disease detection,Semantic (MiniLM + FAISS vectors),5,0.04880002234131098
+Machine learning for crop disease prediction,BM25,1,0.8932000491768122
+Machine learning for crop disease prediction,Semantic (MiniLM + FAISS vectors),1,0.08509994950145483
+Machine learning for crop disease prediction,BM25,2,0.9022000012919307
+Machine learning for crop disease prediction,Semantic (MiniLM + FAISS vectors),2,0.05040003452450037
+Machine learning for crop disease prediction,BM25,3,0.6502999458462
+Machine learning for crop disease prediction,Semantic (MiniLM + FAISS vectors),3,0.04299997817724943
+Machine learning for crop disease prediction,BM25,4,0.8111000061035156
+Machine learning for crop disease prediction,Semantic (MiniLM + FAISS vectors),4,0.05909998435527086
+Machine learning for crop disease prediction,BM25,5,0.762699986808002
+Machine learning for crop disease prediction,Semantic (MiniLM + FAISS vectors),5,0.053799943998456
+Explainable AI for cybersecurity,BM25,1,0.7100999355316162
+Explainable AI for cybersecurity,Semantic (MiniLM + FAISS vectors),1,0.0716999638825655
+Explainable AI for cybersecurity,BM25,2,0.5825000116601586
+Explainable AI for cybersecurity,Semantic (MiniLM + FAISS vectors),2,0.05949998740106821
+Explainable AI for cybersecurity,BM25,3,0.5004999693483114
+Explainable AI for cybersecurity,Semantic (MiniLM + FAISS vectors),3,0.056900084018707275
+Explainable AI for cybersecurity,BM25,4,0.587899936363101
+Explainable AI for cybersecurity,Semantic (MiniLM + FAISS vectors),4,0.0521000474691391
+Explainable AI for cybersecurity,BM25,5,0.5932999774813652
+Explainable AI for cybersecurity,Semantic (MiniLM + FAISS vectors),5,0.05419994704425335
+AI-based personalized learning,BM25,1,0.7048000115901232
+AI-based personalized learning,Semantic (MiniLM + FAISS vectors),1,0.07529999129474163
+AI-based personalized learning,BM25,2,0.5395999178290367
+AI-based personalized learning,Semantic (MiniLM + FAISS vectors),2,0.04970002919435501
+AI-based personalized learning,BM25,3,0.49190002027899027
+AI-based personalized learning,Semantic (MiniLM + FAISS vectors),3,0.041899969801306725
+AI-based personalized learning,BM25,4,0.4884999943897128
+AI-based personalized learning,Semantic (MiniLM + FAISS vectors),4,0.041899969801306725
+AI-based personalized learning,BM25,5,0.49240002408623695
+AI-based personalized learning,Semantic (MiniLM + FAISS vectors),5,0.04169996827840805
+Deep learning for climate prediction,BM25,1,1.3640000252053142
+Deep learning for climate prediction,Semantic (MiniLM + FAISS vectors),1,0.13429997488856316
+Deep learning for climate prediction,BM25,2,1.2504999758675694
+Deep learning for climate prediction,Semantic (MiniLM + FAISS vectors),2,0.11190003715455532
+Deep learning for climate prediction,BM25,3,1.0475999442860484
+Deep learning for climate prediction,Semantic (MiniLM + FAISS vectors),3,0.09039998985826969
+Deep learning for climate prediction,BM25,4,1.0996999917551875
+Deep learning for climate prediction,Semantic (MiniLM + FAISS vectors),4,0.09109999518841505
+Deep learning for climate prediction,BM25,5,1.1316000018268824
+Deep learning for climate prediction,Semantic (MiniLM + FAISS vectors),5,0.08869997691363096

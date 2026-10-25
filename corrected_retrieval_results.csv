@@ -1,0 +1,101 @@
+Query,Domain,Method,Rank,Paper_ID,Title,Score,Relevant
+AI for early disease detection,Healthcare,BM25,1,W4327814511,Artificial Intelligence‐Based Medical Sensors for Healthcare System,12.6550522,0
+AI for early disease detection,Healthcare,BM25,2,W3192087497,Smart Materials Enabled with Artificial Intelligence for Healthcare Wearables,11.22797938,0
+AI for early disease detection,Healthcare,BM25,3,W4412043430,"Integrating artificial intelligence in healthcare: applications, challenges, and future directions",9.655303868,0
+AI for early disease detection,Healthcare,BM25,4,W4394573140,"Redefining Healthcare With Artificial Intelligence (AI): The Contributions of ChatGPT, Gemini, and Co-pilot",8.809887573,0
+AI for early disease detection,Healthcare,BM25,5,W4410079576,"Adoption of artificial intelligence in healthcare: survey of health system priorities, successes, and challenges",8.565451664,0
+AI for early disease detection,Healthcare,BM25,6,W3124926562,Artificial intelligence in sepsis early prediction and diagnosis using unstructured data in healthcare,8.379759034,1
+AI for early disease detection,Healthcare,BM25,7,W2997569720,Artificial Intelligence in Healthcare: Review and Prediction Case Studies,8.295640698,0
+AI for early disease detection,Healthcare,BM25,8,W3029881688,Sex and gender differences and biases in artificial intelligence for biomedicine and healthcare,8.274678678,0
+AI for early disease detection,Healthcare,BM25,9,W4317254367,"A systematic literature review of artificial intelligence in the healthcare sector: Benefits, challenges, methodologies, and functionalities",8.259003016,0
+AI for early disease detection,Healthcare,BM25,10,W4382058325,Recent Advances of Artificial Intelligence in Healthcare: A Systematic Literature Review,7.97497313,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),1,W4386889960,Artificial Intelligence in Healthcare: Perception and Reality,0.538143635,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),2,W3186209406,Artificial intelligence in healthcare: transforming the practice of medicine,0.53154707,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),3,W4220831071,"Utilization of Artificial Intelligence in Disease Prevention: Diagnosis, Treatment, and Implications for the Healthcare Workforce",0.528514445,1
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),4,W3036858161,Artificial intelligence-based tools to control healthcare associated infections: A systematic review of the literature,0.524666548,1
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),5,W3124926562,Artificial intelligence in sepsis early prediction and diagnosis using unstructured data in healthcare,0.5233832,1
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),6,W4404286659,Artificial intelligence in healthcare (Review),0.522444606,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),7,W4386293515,Artificial intelligence in clinical medicine: catalyzing a sustainable global healthcare paradigm,0.520027757,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),8,W3203678358,Machine learning and artificial intelligence: applications in healthcare epidemiology,0.517884731,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),9,W4327814511,Artificial Intelligence‐Based Medical Sensors for Healthcare System,0.512907207,0
+AI for early disease detection,Healthcare,Semantic (MiniLM + FAISS vectors),10,W4362523629,Artificial intelligence in healthcare: a mastery,0.510233819,0
+Machine learning for crop disease prediction,Agriculture,BM25,1,W3120697286,Machine Learning Applications for Precision Agriculture: A Comprehensive Review,7.737823134,0
+Machine learning for crop disease prediction,Agriculture,BM25,2,W4309637232,Explainable artificial intelligence and interpretable machine learning for agricultural data analysis,7.355643107,0
+Machine learning for crop disease prediction,Agriculture,BM25,3,W4404141860,Artificial Intelligence Tools for the Agriculture Value Chain: Status and Prospects,7.087764859,0
+Machine learning for crop disease prediction,Agriculture,BM25,4,W4285815848,A Review of Using Artificial Intelligence and Machine Learning in Food and Agriculture Industry,7.068917192,0
+Machine learning for crop disease prediction,Agriculture,BM25,5,W4381804394,"Artificial Intelligence in Agriculture: Benefits, Challenges, and Trends",6.770129719,0
+Machine learning for crop disease prediction,Agriculture,BM25,6,W4392754729,"Revolutionizing agriculture with artificial intelligence: plant disease detection methods, applications, and their limitations",6.703901666,1
+Machine learning for crop disease prediction,Agriculture,BM25,7,W4408218335,Artificial Intelligence for Sustainable Agriculture: A Comprehensive Review of AI-Driven Technologies in Crop Production,6.297941503,0
+Machine learning for crop disease prediction,Agriculture,BM25,8,W4394785957,"Transforming Agriculture through Artificial Intelligence: Advancements in Plant Disease Detection, Applications, and Challenges",6.082579941,1
+Machine learning for crop disease prediction,Agriculture,BM25,9,W4390845318,Modern-age Agriculture with Artificial Intelligence: A review emphasizing Crop Yield Prediction,5.964312894,0
+Machine learning for crop disease prediction,Agriculture,BM25,10,W3088154325,Applications of Remote Sensing in Precision Agriculture: A Review,5.650921748,0
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),1,W4392754729,"Revolutionizing agriculture with artificial intelligence: plant disease detection methods, applications, and their limitations",0.693384409,1
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),2,W4400217631,Classifying Crop Leaf Diseases using Different Deep Learning Models with Transfer Learning,0.683379292,1
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),3,W4389319169,Role of Artificial Intelligence in Agriculture: An Analysis and Advancements With Focus on Plant Diseases,0.6599617,1
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),4,W4317034491,Data management challenges for artificial intelligence in plant and agricultural research,0.649079561,0
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),5,W3158286968,Data management challenges for artificial intelligence in plant and agricultural research,0.648736119,0
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),6,W4407983563,Remote sensing and artificial intelligence: revolutionizing pest management in agriculture,0.644696832,0
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),7,W4394785957,"Transforming Agriculture through Artificial Intelligence: Advancements in Plant Disease Detection, Applications, and Challenges",0.639125466,1
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),8,W4390845318,Modern-age Agriculture with Artificial Intelligence: A review emphasizing Crop Yield Prediction,0.632244706,0
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),9,W4311001965,Artificial Intelligence-Based Robust Hybrid Algorithm Design and Implementation for Real-Time Detection of Plant Diseases in Agricultural Environments,0.625850439,1
+Machine learning for crop disease prediction,Agriculture,Semantic (MiniLM + FAISS vectors),10,W3120697286,Machine Learning Applications for Precision Agriculture: A Comprehensive Review,0.624614596,0
+Explainable AI for cybersecurity,Computer Science,BM25,1,W4206713037,Detecting Cybersecurity Attacks in Internet of Things Using Artificial Intelligence Methods: A Systematic Literature Review,10.90780641,0
+Explainable AI for cybersecurity,Computer Science,BM25,2,W3204153914,Four principles of explainable artificial intelligence,7.275311718,0
+Explainable AI for cybersecurity,Computer Science,BM25,3,W4240187149,Four Principles of Explainable Artificial Intelligence,7.011625041,0
+Explainable AI for cybersecurity,Computer Science,BM25,4,W3046238651,"The role of explainability in creating trustworthy artificial intelligence for health care: A comprehensive survey of the terminology, design choices, and evaluation strategies",6.894240256,0
+Explainable AI for cybersecurity,Computer Science,BM25,5,W3045742910,Industry 4.0 in Finance: The Impact of Artificial Intelligence (AI) on Digital Financial Inclusion,6.635223091,0
+Explainable AI for cybersecurity,Computer Science,BM25,6,W4226065182,Explainable Artificial Intelligence (XAI),6.461871552,0
+Explainable AI for cybersecurity,Computer Science,BM25,7,W4385059984,A Review of Trustworthy and Explainable Artificial Intelligence (XAI),6.393243079,0
+Explainable AI for cybersecurity,Computer Science,BM25,8,W4229056760,The Promises and Challenges of Artificial Intelligence for Teachers: a Systematic Review of Research,5.997011656,0
+Explainable AI for cybersecurity,Computer Science,BM25,9,W3002093512,"Artificial Intelligence, Values, and Alignment",5.99439823,0
+Explainable AI for cybersecurity,Computer Science,BM25,10,W3093718041,A historical perspective of explainable Artificial Intelligence,5.886340505,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),1,W3204153914,Four principles of explainable artificial intelligence,0.699757755,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),2,W4240187149,Four Principles of Explainable Artificial Intelligence,0.676276445,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),3,W3093718041,A historical perspective of explainable Artificial Intelligence,0.6574862,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),4,W3182546273,Explainable artificial intelligence: an analytical review,0.626065135,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),5,W4385059984,A Review of Trustworthy and Explainable Artificial Intelligence (XAI),0.60613966,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),6,W4386609836,Artificial Intelligence in Computer Science,0.599543333,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),7,W3164846705,Notions of explainability and evaluation approaches for explainable artificial intelligence,0.590383053,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),8,W4319348251,Accountability in artificial intelligence: what it is and how it works,0.581537902,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),9,W3046238651,"The role of explainability in creating trustworthy artificial intelligence for health care: A comprehensive survey of the terminology, design choices, and evaluation strategies",0.569841266,0
+Explainable AI for cybersecurity,Computer Science,Semantic (MiniLM + FAISS vectors),10,W4226065182,Explainable Artificial Intelligence (XAI),0.566573143,0
+AI-based personalized learning,Education,BM25,1,W3128819993,Personalized Education in the Artificial Intelligence Era: What to Expect Next,7.96332489,1
+AI-based personalized learning,Education,BM25,2,W4214890416,Trends on Technologies and Artificial Intelligence in Education for Personalized Learning: Systematic Literature Review,7.960035635,1
+AI-based personalized learning,Education,BM25,3,W4402988539,Artificial Intelligence-Enabled Intelligent Assistant for Personalized and Adaptive Learning in Higher Education,7.449686032,1
+AI-based personalized learning,Education,BM25,4,W3165274928,Potential of Artificial Intelligence for Transformation of the Education System in India.,7.278273255,0
+AI-based personalized learning,Education,BM25,5,W4401727214,Generative Artificial Intelligence in Education: Advancing Adaptive and Personalized Learning,7.058238112,1
+AI-based personalized learning,Education,BM25,6,W4392314180,REVOLUTIONIZING EDUCATION: HARNESSING THE POWER OF ARTIFICIAL INTELLIGENCE FOR PERSONALIZED LEARNING,6.845142201,1
+AI-based personalized learning,Education,BM25,7,W4408925021,The Impact of Artificial Intelligence on Personalized Learning in Higher Education: A Systematic Review,6.718570725,1
+AI-based personalized learning,Education,BM25,8,W4309389066,"Two Decades of Artificial Intelligence in Education: Contributors, Collaborations, Research Topics, Challenges, and Future Directions",6.613669667,0
+AI-based personalized learning,Education,BM25,9,W3016417837,Artificial Intelligence in Dentistry: Chances and Challenges,6.430355029,0
+AI-based personalized learning,Education,BM25,10,W4389831224,Revolutionizing education: Artificial intelligence empowered learning in higher education,6.387914746,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),1,W3128819993,Personalized Education in the Artificial Intelligence Era: What to Expect Next,0.712829471,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),2,W4214890416,Trends on Technologies and Artificial Intelligence in Education for Personalized Learning: Systematic Literature Review,0.594164014,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),3,W4408925021,The Impact of Artificial Intelligence on Personalized Learning in Higher Education: A Systematic Review,0.563894987,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),4,W3016229568,Trustworthy artificial intelligence (AI) in education,0.557800174,0
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),5,W4402988539,Artificial Intelligence-Enabled Intelligent Assistant for Personalized and Adaptive Learning in Higher Education,0.541807413,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),6,W4392314180,REVOLUTIONIZING EDUCATION: HARNESSING THE POWER OF ARTIFICIAL INTELLIGENCE FOR PERSONALIZED LEARNING,0.541653275,1
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),7,W3165274928,Potential of Artificial Intelligence for Transformation of the Education System in India.,0.536871612,0
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),8,W4293036536,Closing the loop – The human role in artificial intelligence for education,0.532044113,0
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),9,W4382246267,Exploring the Transformative Role of Artificial Intelligence and Metaverse in Education: A Comprehensive Review,0.524659753,0
+AI-based personalized learning,Education,Semantic (MiniLM + FAISS vectors),10,W4396766974,Artificial intelligence in education: A systematic literature review,0.522806108,0
+Deep learning for climate prediction,Environmental Science,BM25,1,W4212799958,Week-Wise Student Performance Early Prediction in Virtual Learning Environment Using a Deep Explainable Artificial Intelligence,10.70869025,0
+Deep learning for climate prediction,Environmental Science,BM25,2,W4291670288,Artificial Intelligence Technologies for Forecasting Air Pollution and Human Health: A Narrative Review,10.08782608,0
+Deep learning for climate prediction,Environmental Science,BM25,3,W4283365061,Artificial Intelligence Algorithm-Based Economic Denial of Sustainability Attack Detection Systems: Cloud Computing Environments,8.840187905,0
+Deep learning for climate prediction,Environmental Science,BM25,4,W4386995232,Enhancing urban mobility: integration of IoT road traffic data and artificial intelligence in smart city environment,8.261975996,0
+Deep learning for climate prediction,Environmental Science,BM25,5,W4294904679,"Smart breeding driven by big data, artificial intelligence, and integrated genomic-enviromic prediction",8.231741268,0
+Deep learning for climate prediction,Environmental Science,BM25,6,W4408758439,Educational data mining for student performance prediction in artificial intelligence environment,7.842387603,0
+Deep learning for climate prediction,Environmental Science,BM25,7,W3183145420,Artificial intelligence techniques for enabling Big Data services in distribution networks: A review,7.834219835,0
+Deep learning for climate prediction,Environmental Science,BM25,8,W4288430950,Artificial intelligence based optimization with deep learning model for blockchain enabled intrusion detection in CPS environment,7.307231275,0
+Deep learning for climate prediction,Environmental Science,BM25,9,W3039799152,"Black boxes, not green: Mythologizing artificial intelligence and omitting the environment",7.267437957,0
+Deep learning for climate prediction,Environmental Science,BM25,10,W4402839760,Cardiovascular care with digital twin technology in the era of generative artificial intelligence,6.946751417,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),1,W4382315652,Application of Artificial Intelligence to Predict CO2 Emissions: Critical Step towards Sustainable Environment,0.446756899,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),2,W4291670288,Artificial Intelligence Technologies for Forecasting Air Pollution and Human Health: A Narrative Review,0.383464962,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),3,W3039799152,"Black boxes, not green: Mythologizing artificial intelligence and omitting the environment",0.365258396,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),4,W4400957436,The smart future for sustainable development: Artificial intelligence solutions for sustainable urbanization,0.36520505,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),5,W4360855977,Editorial: Artificial intelligence applications in reduction of carbon emissions: Step towards sustainable environment,0.350250572,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),6,W4391968719,Artificial intelligence and IoT driven technologies for environmental pollution monitoring and management,0.34957242,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),7,W3125030332,Impact of renewable energy utilization and artificial intelligence in achieving sustainable development goals,0.346899509,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),8,W4403530914,"Artificial intelligence in environmental monitoring: Advancements, challenges, and future directions",0.334318906,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),9,W4200373973,Cognitive Computational Model Using Machine Learning Algorithm in Artificial Intelligence Environment,0.324803919,0
+Deep learning for climate prediction,Environmental Science,Semantic (MiniLM + FAISS vectors),10,W4212799958,Week-Wise Student Performance Early Prediction in Virtual Learning Environment Using a Deep Explainable Artificial Intelligence,0.312904269,0
