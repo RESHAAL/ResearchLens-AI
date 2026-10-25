@@ -28,10 +28,10 @@ The embedding pipeline combines each paper's title, abstract, topics, and keywor
 ## 3. Methodology
 
 ### 3.1 Semantic Embedding
-The system uses the `all-MiniLM-L6-v2` Sentence-Transformers model to encode the combined paper text into dense vector representations. Embeddings are generated with a batch size of 32 and normalized to unit length.
+The system uses Sentence-Transformers `all-MiniLM-L6-v2` to encode each paper's title, abstract, topics, and keywords into dense vectors. Missing values are replaced with empty strings. Encoding uses batch size 32 and `normalize_embeddings=True`. The saved embedding file stores vectors and corresponding Paper_ID values. The model is loaded by the application and query embeddings are normalized before similarity search.
 
 ### 3.2 FAISS Similarity Search
-The normalized embeddings are indexed using FAISS `IndexFlatIP`. Because the vectors are normalized, inner-product scores correspond to cosine similarity. Query embeddings are normalized before retrieval. The application retrieves a candidate pool and can subsequently filter results by the selected research domain.
+The normalized embeddings are indexed using FAISS CPU `IndexFlatIP`, an exact inner-product index. With unit-normalized document and query vectors, inner-product scores correspond to cosine similarity. The embedding dimension is determined from the generated vectors. The application retrieves an initial semantic candidate pool and then applies the selected-domain filter; consequently, the final number of returned results can be smaller than the requested top-k.
 
 ### 3.3 BM25 Baseline
 BM25 provides a lexical retrieval baseline. It ranks papers according to query-term matching and term-frequency and document-length statistics. In the corrected retrieval experiment, both methods rank a shared domain-specific candidate set, improving the comparability of the ranking evaluation.
@@ -64,18 +64,23 @@ The repeated timing experiment includes five queries and five runs per query for
 
 ## 4. Results
 
-### 4.1 Aggregate Retrieval Performance
+### 4.1 Software and Hardware Environment
+The recorded experiment environment was Python 3.13.14 on Windows 11 (build 10.0.26200), using an Intel64 Family 6 Model 154 Stepping 3 CPU; no GPU was available. Recorded package versions were pandas 2.3.2, NumPy 2.3.3, faiss-cpu 1.15.0, sentence-transformers 5.6.1, Transformers 5.14.1, PyTorch 2.11.0, rank-bm25 0.2.2, and Streamlit 1.63.0. These versions are taken from `experiment_environment.txt`.
+
+
+
+### 4.2 Aggregate Retrieval Performance
 
 | Method | Mean Precision@10 | Mean F1@10 |
 |---|---:|---:|
-| BM25 | 0.20 | 0.2677 |
-| Semantic (MiniLM + FAISS) | 0.26 | 0.3697 |
+| BM25 | 0.20 | 0.2488 |
+| Semantic (MiniLM + FAISS) | 0.26 | 0.3433 |
 
-Semantic retrieval achieved a mean Precision@10 of 0.26, compared with 0.20 for BM25. This is an absolute improvement of 0.06, or six percentage points. Mean F1@10 was also higher for semantic retrieval (0.3697) than for BM25 (0.2677).
+Semantic retrieval achieved a mean Precision@10 of 0.26, compared with 0.20 for BM25. This is an absolute improvement of 0.06, or six percentage points. Mean F1@10 was higher for semantic retrieval (0.3433) than for BM25 (0.2488). The pooled-relevance recall estimates averaged 0.5429 for semantic retrieval and 0.3467 for BM25. These estimates depend on the pooled labels and are not corpus-wide recall. The metrics are provisional because two relevance-label discrepancies remain unresolved.
 
-These results favor semantic retrieval on the evaluated queries. However, the small query set and provisional relevance labels limit the strength and generalizability of this conclusion.
+These results favor semantic retrieval on average for this small query set. However, two label discrepancies remain unresolved, and the relevance labels have not been independently validated by multiple expert assessors. The findings are therefore provisional and should not be treated as conclusive.
 
-### 4.2 Query-Level Results
+### 4.3 Query-Level Results
 
 | Query | Method | Relevant@10 | Precision@10 | F1@10 |
 |---|---|---:|---:|---:|
@@ -92,7 +97,7 @@ These results favor semantic retrieval on the evaluated queries. However, the sm
 
 Semantic retrieval performed better for early disease detection, climate prediction, and crop disease prediction. BM25 performed better for personalized learning. Both methods returned no results labeled relevant for explainable AI for cybersecurity. This variation indicates that retrieval performance depends on the query and domain rather than one method uniformly outperforming the other.
 
-### 4.3 Timing Results
+### 4.4 Repeated Timing Results
 The repeated ranking-only timing measurements recorded the following mean times:
 
 | Method | Mean ranking time | Standard deviation |
@@ -110,6 +115,8 @@ Nevertheless, the personalized-learning query favored BM25, and the cybersecurit
 The gap-analysis component provides structured summaries of recurring limitation-related expressions. Since it uses predefined patterns, its output may be affected by wording, context, negation, and differences in academic writing style. The recommendations are mapped from gap categories rather than learned from researcher feedback. SDG analysis similarly depends on the quality and coverage of the available labels.
 
 ## 6. Limitations
+
+Independent expert validation of the research-gap detection output has not been completed or documented. Therefore, no claim is made that the detected gaps have been validated by domain experts. The retrieval relevance labels are also provisional; two label discrepancies were found between the corrected results file and the review file and require resolution before the metrics can be treated as fully verified.
 1. The retrieval evaluation contains only five queries and ten results per method per query.
 2. Relevance labels are provisional and have not been independently validated by multiple expert assessors.
 3. The cybersecurity query yielded no results labeled relevant for either method; additional query formulations and corpus checks are needed.
@@ -148,3 +155,19 @@ The following foundational references should be checked against the implementati
 - Recalculated query-level metrics: `recalculated_metrics_by_query.csv`
 - Relevance review file: `relevance_review_completed.csv`
 - Timing measurements: `repeated_timing_results.csv`
+
+
+## Relevance-Label Discrepancy Audit
+A comparison of `corrected_retrieval_results.csv` and `relevance_review_completed.csv` identified two conflicting labels for the same query, method, rank, and paper:
+- Healthcare, "AI for early disease detection", semantic retrieval, rank 4, Paper_ID `W3036858161`: corrected results label 1; review file label 0.
+- Environmental Science, "Deep learning for climate prediction", semantic retrieval, rank 1, Paper_ID `W4382315652`: corrected results label 0; review file label 1.
+
+These disagreements must be resolved by checking the paper content and applying a consistent relevance criterion. Until then, the relevance labels and metrics should be described as provisional. No label has been silently changed in this draft.
+
+
+## Final Metric Verification Status
+The corrected retrieval file was checked for 100 rows, binary relevance labels, and ten ranked results per query-method pair. Metrics were recalculated and saved to `verified_metrics_by_query.csv` and `verified_metrics_summary.csv`. Two relevance-label conflicts between the corrected retrieval file and the review file remain unresolved; therefore, this is a structural and arithmetic verification, not a final validation of relevance judgments.
+
+
+## Embedding Provenance Confirmation Status
+The repository's `modules/embeddings.py` code constructs embedding text from `Title`, `Abstract`, `Topics`, and `Keywords`, replacing missing values with empty strings. This establishes the fields specified by the current code. Confirmation from the project team that the committed embedding artifact was generated from this exact version of the pipeline remains pending and must not be represented as completed.
