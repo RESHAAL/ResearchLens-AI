@@ -1,7 +1,7 @@
 # ResearchLens AI: Semantic Research Paper Retrieval and Research Gap Analysis Across Multiple Domains
 
 ## Abstract
-ResearchLens AI is a research discovery and analysis system designed to retrieve relevant academic papers, identify recurring research gaps, recommend future research directions, and summarize Sustainable Development Goal (SDG) alignment. The system uses Sentence-BERT embeddings with FAISS-based similarity search and compares semantic retrieval with BM25 keyword retrieval. Its dataset contains 2,200 research papers across ten academic domains. A preliminary evaluation used five queries and ten retrieved papers per method for each query. The recalculated results show mean Precision@10 of 0.26 for semantic retrieval and 0.20 for BM25. Mean F1@10 was 0.3697 for semantic retrieval and 0.2677 for BM25. These findings suggest that semantic retrieval performed better on average in this small evaluation, although performance varied considerably by query. The relevance judgments are provisional and have not been independently validated by multiple expert assessors. The results should therefore be interpreted as preliminary rather than conclusive evidence.
+ResearchLens AI is a research discovery and analysis system designed to retrieve relevant academic papers, identify recurring research gaps, recommend future research directions, and summarize Sustainable Development Goal (SDG) alignment. The system uses Sentence-BERT embeddings with FAISS-based similarity search and compares semantic retrieval with BM25 keyword retrieval. Its dataset contains 2,200 research papers across ten academic domains. A preliminary evaluation used five queries and ten retrieved papers per method for each query. The recalculated results show mean Precision@10 of 0.28 for semantic retrieval and 0.20 for BM25. Mean nDCG@10 was 0.7062 for semantic retrieval and 0.3458 for BM25. These findings suggest that semantic retrieval performed better on average in this small evaluation, although performance varied considerably by query. The relevance judgments are provisional and have not been independently validated by multiple expert assessors. The results should therefore be interpreted as preliminary rather than conclusive evidence.
 
 **Keywords:** Research discovery, semantic search, Sentence-BERT, FAISS, BM25, research gap analysis, SDGs
 
@@ -71,14 +71,14 @@ The recorded experiment environment was Python 3.13.14 on Windows 11 (build 10.0
 
 ### 4.2 Aggregate Retrieval Performance
 
-| Method | Mean Precision@10 | Mean F1@10 |
+| Method | Mean Precision@10 | Mean nDCG@10 |
 |---|---:|---:|
-| BM25 | 0.20 | 0.2488 |
-| Semantic (MiniLM + FAISS) | 0.26 | 0.3433 |
+| BM25 | 0.20 | 0.3458 |
+| Semantic (MiniLM + FAISS) | 0.28 | 0.7062 |
 
-Semantic retrieval achieved a mean Precision@10 of 0.26, compared with 0.20 for BM25. This is an absolute improvement of 0.06, or six percentage points. Mean F1@10 was higher for semantic retrieval (0.3433) than for BM25 (0.2488). The pooled-relevance recall estimates averaged 0.5429 for semantic retrieval and 0.3467 for BM25. These estimates depend on the pooled labels and are not corpus-wide recall. The metrics are provisional because two relevance-label discrepancies remain unresolved.
+Semantic retrieval achieved a mean Precision@10 of 0.28, compared with 0.20 for BM25. This is an absolute improvement of 0.08, or eight percentage points. F1@10 is being rechecked against the updated relevance labels and will not be reported as final until its recall denominator is clearly defined. Recall estimates are not reported as final because the complete relevant-document pool for each query has not been established. These estimates depend on the pooled labels and are not corpus-wide recall. The metrics are provisional because the relevance labels remain provisional and require independent validation.
 
-These results favor semantic retrieval on average for this small query set. However, two label discrepancies remain unresolved, and the relevance labels have not been independently validated by multiple expert assessors. The findings are therefore provisional and should not be treated as conclusive.
+These results favor semantic retrieval on average for this small query set. The relevance labels remain provisional and have not been independently validated by multiple expert assessors. The findings should not be treated as conclusive.
 
 ### 4.3 Query-Level Results
 
@@ -166,7 +166,7 @@ These disagreements must be resolved by checking the paper content and applying 
 
 
 ## Final Metric Verification Status
-The corrected retrieval file was checked for 100 rows, binary relevance labels, and ten ranked results per query-method pair. Metrics were recalculated and saved to `verified_metrics_by_query.csv` and `verified_metrics_summary.csv`. Two relevance-label conflicts between the corrected retrieval file and the review file remain unresolved; therefore, this is a structural and arithmetic verification, not a final validation of relevance judgments.
+The corrected retrieval file was checked for 100 rows, binary relevance labels, and ten ranked results per query-method pair. Metrics were recalculated and saved to `verified_metrics_by_query.csv` and `verified_metrics_summary.csv`. Two previously conflicting labels were aligned across the corrected retrieval and review files after inspecting the paper abstracts. These judgments remain provisional and have not been independently validated by multiple assessors; therefore, this is not a final validation of relevance judgments.
 
 
 ## Embedding Provenance Confirmation Status
